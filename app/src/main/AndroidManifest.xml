@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rafale.studio.V1.foodplaza">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodPlaza">
+        <activity
+            android:name=".Activities.StartUpActivities.ErrorOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.SuccessOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.OtpVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.PhoneVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.StartUpActivities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.StartUpActivities.IntroActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
